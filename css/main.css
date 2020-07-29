@@ -60,7 +60,7 @@ body a {
 .main_visual {
   height: 100vh;
   position: relative;
-  background-image: url(/img/bg1.png);
+  background-image: url(https://nagidesu.github.io/portfolio/img/bg1.png);
   background-size: cover;
   width: 100%;
 }
@@ -86,7 +86,7 @@ body a {
 
 .practice {
   padding: 5% 0;
-  background-image: url(/img/bg2.png);
+  background-image: url(https://nagidesu.github.io/portfolio/img/bg2.png);
   background-size: cover;
 }
 
@@ -172,7 +172,7 @@ body a {
 
 .about {
   padding: 5% 0;
-  background-image: url(/img/bg1.png);
+  background-image: url(https://nagidesu.github.io/portfolio/img/bg1.png);
   background-size: cover;
 }
 
@@ -249,7 +249,7 @@ body a {
 }
 
 .skill {
-  background-image: url(/img/bg2.png);
+  background-image: url(https://nagidesu.github.io/portfolio/img/bg2.png);
   background-size: cover;
   padding: 5% 0;
 }
@@ -309,7 +309,7 @@ body a {
 
 .contact {
   padding: 5% 0;
-  background-image: url(/img/bg1.png);
+  background-image: url(https://nagidesu.github.io/portfolio/img/bg1.png);
   background-size: cover;
   width: 100%;
 }
@@ -342,7 +342,7 @@ body a {
 }
 
 .footer {
-  background-image: url(/img/bg2.png);
+  background-image: url(https://nagidesu.github.io/portfolio/img/bg2.png);
   margin: 0 auto;
 }
 
