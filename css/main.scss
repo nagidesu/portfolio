@@ -1,0 +1,303 @@
+@charset"utf-8";
+
+@mixin content_title {
+    text-align: center;
+
+    h1 {
+        font-size: 3rem;
+        margin-bottom: 0;
+        margin-top: 0;
+        padding-top: 5vh;
+    }
+
+    .summary {
+        font-size: 1.3rem;
+    }
+}
+
+
+body {
+
+    li {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}
+
+.header {
+    border-bottom: 2px solid #ececec;
+    background-color: rgba(255,255,255,0.5);
+    z-index: 10;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+
+    .header_nav {
+        margin: 0 30%;
+
+        ul {
+            display: flex;
+            justify-content: space-around;
+            margin: auto 0;
+            padding-left: 0;
+
+            li {
+                &::after {
+                    content: "";
+                    border-bottom: 2px solid #000;
+                    bottom: 0;
+                    display: block;
+                    transition: .2s;
+                    width: 0;
+                }
+
+                &:hover::after {
+                    width: 100%;
+                }
+
+                a {
+                    display: inline-block;
+                    padding: 3vmin 0;
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                    color: #000;
+                }
+            }
+        }
+    }
+}
+
+.main_visual {
+    height: 100vh;
+    position: relative;
+    background-image: url(/img/bg1.png);
+    background-size: cover;
+    width: 100%;
+
+    .page_title {
+        text-align: center;
+        margin: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        h1 {
+            margin-bottom: 0;
+            font-size: 4rem;
+        }
+
+        p {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.practice {
+    padding: 5% 0;
+    background-image: url(/img/bg2.png);
+    background-size: cover;
+
+    .wrapper{
+        opacity: 0;
+        transform: translateY(100px);
+        transition: all 1.2s;
+        
+    .content_title {
+        @include content_title;
+        .summary{
+            line-height: 2;
+            span{
+                border-bottom: 1px solid #000;
+            }
+        }
+    }
+
+    .record {
+        padding-bottom: 5vh;
+        margin: 0 5%;
+        display: flex;
+        justify-content: space-around;
+
+        .performance {
+            width: 55vmin;
+            text-align: center;
+
+            img {
+                width: 100%;
+                transition: .3s;
+                box-shadow: 2px 2px 3px #000;
+
+                &:hover {
+                    transform: translate(0, -6%);
+                    transition: .2s;
+                    box-shadow: none;
+                }
+            }
+
+            .explain {
+                font-size: 1.5rem;
+                font-weight: bold;
+                margin-top: 0;
+                opacity: .6;
+
+                span {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+    }
+}
+.practice{
+    .is_over{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.about {
+    padding: 5% 0;
+    background-image: url(/img/bg1.png);
+    background-size: cover;
+
+    .wrapper{
+        opacity: 0;
+        transform: translateY(100px);
+        transition: all 1.2s;
+        .content_title {
+            @include content_title;
+        }
+    
+        .my_things {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+    
+            .photo_me {
+                width: 30vmin;
+                border-radius: 50px;
+                margin: 5%;
+            }
+    
+            .contents {
+                margin: 5%;
+                .text_contents{
+                    h2{
+                        font-size: 2rem;
+                    }
+                    h3{
+                        margin: 0;
+                        font-size: 1.15rem;
+                        letter-spacing: 0.15rem;
+                        line-height: 1.5;
+                    }
+    
+                    .resume_content{
+                        display: flex;
+                        h3{
+                            margin-right: 3vmin;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .is_over{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.skill{
+    background-image: url(/img/bg2.png);
+    background-size: cover;
+    padding: 5% 0;
+    .wrapper{
+        opacity: 0;
+        transform: translateY(100px);
+        transition: all 1.2s;
+        .section_title{
+            @include content_title;
+        }
+        .section_contents{
+            margin: 0 30%;
+            .section_content{
+                display: flex;
+                align-items: center;
+                .skill_img{
+                    .fab{
+                        width: 14vmin;
+                    }
+                    h2{
+                        font-size: 1.5rem;
+                        text-align: center;
+                        color: #000;
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+    }
+    .is_over{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.contact{
+    padding: 5% 0;
+    background-image: url(/img/bg1.png);
+    background-size: cover;
+    width: 100%;
+    .section_title{
+        @include content_title;
+    }
+
+    .contents{
+        text-align: center;
+        p{
+            font-size: 1.5rem;
+        }
+        .content{
+            .colorTW{
+                color: #a0d8ef;
+            }
+        }
+    }
+}
+
+.footer{
+    background-image: url(/img/bg2.png);
+    margin: 0 auto;
+    p{
+        color: #000;
+        text-align: center;
+        padding: 2vmin;
+        margin: 0;
+    }
+}
+
+#scroll_top{
+    display: inline-block;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    color: #fff;
+    background-color: #000;
+    font-size: 2rem;
+    border-radius: 50px;
+    width: 6vmin;
+    height: 6vmin;
+    line-height: 6vmin;
+    text-align: center;
+    &:hover{
+        cursor: pointer;
+    }
+}

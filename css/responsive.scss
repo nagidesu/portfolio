@@ -1,0 +1,134 @@
+@charset"utf-8";
+
+@media(max-width: 480px){
+
+    .header{
+        .header_nav{
+            margin: 0 5%;
+            ul{
+                li{
+                    a{
+                        padding: 4vmin 0;
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .main_visual{
+        .page_title{
+            h1{
+                font-size: 2.5rem;
+            }
+        }
+    }
+
+    .practice{
+        .wrapper{
+            .content_title{
+                h1{
+                    font-size: 2rem;
+                }
+                .summary{
+                    font-size: 1rem;
+                    line-height: 2;
+                    span{
+                        border-bottom: 1px solid #000;
+                    }
+                }
+            }
+    
+            .record{
+                flex-direction: column;
+    
+                .performance{
+                    height: 50vh;
+                    width: 90vmin;
+                    margin: auto;
+                }
+            }
+        }
+    }
+
+    .about{
+        .wrapper{
+            h1{
+                font-size: 2rem;
+            }
+            .summary{
+                font-size: 1rem;
+            }
+            .my_things{
+                margin: 0 5%;
+                flex-direction: column;
+                align-items: center;
+                img{
+                    width: 10vmin;
+                    border-radius: 25px;
+                }
+                .contents{
+                    .text_contents{
+                        h2{
+                            font-size: 1.5rem;
+                        }
+                        h3{
+                            font-size: 1rem;
+                            line-height: 2;
+                        }
+                        .resume_content{
+                            flex-direction: column;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .skill{
+        .wrapper{
+            .section_title{
+                font-size: 2rem;
+            }
+            .section_contents{
+                margin: 0 5%;
+                .section_content{
+                    .skill_img{
+                        .fa-fw{
+                            width: 1em;
+                        }
+                    }
+                    .my_skill{
+                        padding-left: 5vmin;
+                    }
+                }
+            }
+        }
+    }
+
+    .contact{
+        .section_title{
+            h1{
+                font-size: 2rem;
+            }
+            .summary{
+                font-size: 1rem;
+            }
+        }
+    }
+
+    #scroll_top{
+        right: 20px;
+        width: 10vmin;
+        height: 10vmin;
+        font-size: 1.5rem;
+        line-height: 9vmin;
+    }
+
+
+
+
+
+
+
+}
